@@ -9,6 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: Gaoh19/blog-post-workflow@main
+      - name: Fetch latest blog posts
+        uses: Gaoh19/blog-post-workflow@main
         with:
           feed_list: 'https://medium.com/@aburahman918'
